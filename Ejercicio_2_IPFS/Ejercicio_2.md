@@ -17,4 +17,5 @@ Rinkeby.
 
 _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta también
 debe alojarse en GitHub._
+
 ---

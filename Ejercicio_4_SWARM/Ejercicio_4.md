@@ -13,4 +13,5 @@ Una vez alojada la DApp, debe ser capaz de utilizar la aplicación al igual que 
 Adjunte el hash de Swarm asociado con la aplicación.
 
 Describa todo el procedimiento adjuntando las instrucciones utilizadas y sus outputs. Adjunte todos los pantallazos que considere relevantes (como puede ser el navegador mostrando la aplicación o transacciones de MetaMask, entre otros) e indique las direcciones de los contratos en la red correspondiente (Rinkeby, Ropsten...).
+
 ---
