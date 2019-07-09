@@ -26,7 +26,7 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 ![Screenshot_1.jpg](Screenshot_1.jpg)
 
-- Abrimos una consola de desarrollo de Truffle (_truffle develop_) para poder ejecutar los comandos _compilation_ y _migration_:
+- Abrimos una consola de desarrollo de Truffle (_truffle develop_) para poder ejecutar los comandos _compile_ y _migrate_:
 
 ![Screenshot_2.jpg](Screenshot_2.jpg)
 
@@ -40,7 +40,7 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 > _$ npm run dev_
 
-- Una vez configurado MetaMask para que funcione con el nodo local (http://127.0.0.1:8545/) e importamos una de las cuentas disponibles vemos que funciona correctamente:
+- Una vez configurado MetaMask para que funcione con el nodo local (http://127.0.0.1:8545/) e importamos una de las cuentas disponibles, vemos que funciona correctamente:
 
 ![Screenshot_5.jpg](Screenshot_5.jpg)
 
@@ -54,11 +54,11 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 * Indicar que previamente se modificó el fichero _webpack.config.js_ para que se copiasen los ficheros json del directorio _../build/contracts/_ al directorio _/dist_ y tener todos los componentes necesarios para ejecutar la web en un único directorio).  
 * En línea con esto, también se modificó el componente _app/src/index.js_ para incluir el siguiente cambio:  
->> //import metaCoinArtifact from "../../build/contracts/MetaCoin.json"; 
+>> //import metaCoinArtifact from "../../build/contracts/MetaCoin.json";  
 >> import metaCoinArtifact from "../MetaCoin.json";  
 
 
-**5º)** Subimos el truffle project a GitHub:
+**5º)** Subimos nuestro _truffle project_ a GitHub:
 
 > Repositorio: [https://github.com/lealp22/MetaCoin](https://github.com/lealp22/MetaCoin)
 
@@ -87,7 +87,7 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 > _$ ipfs daemon_
  
-- En otra terminal, subimos el directorio que contiene la aplicación a IPFS:
+- En otra terminal, subimos a IPFS el directorio que contiene la aplicación:
 
 > _$ ipfs add -r dist/_
 
@@ -113,6 +113,8 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 > _https://ipfs.io/ipfs/QmcU2PXBLKcqLTnRRL2kafVEN9ZUrvestQ9BDW92tCXu6a/index.html_
 
 ![Screenshot_18.jpg](Screenshot_18.jpg)
+
+_*Los contratos no han sido desplegados en Rinkeby. En vez de utilizar Ganache se ha utilizado _truffle develop_ que también crea un nodo en local (_http://127.0.0.1:8545/_). 
 
 
 
