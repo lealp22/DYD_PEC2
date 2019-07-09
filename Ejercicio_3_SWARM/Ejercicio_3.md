@@ -15,7 +15,7 @@ No es necesario vincular el hash de Swarm a ENS.
 ---
 **1º)** Preparamos Swarm de acuerdo a lo indicado en la web https://swarm-guide.readthedocs.io/en/latest/installation.html.  
 
-Dado que el repositorio PPA ya quedó preparado con la instalación de Ethereum solo ejecutamos:
+Dado que el repositorio PPA ya quedó preparado con la instalación de Ethereum, solo ejecutamos:
 
 > _$ sudo apt-get update_  
 > _$ sudo apt-get install ethereum-swarm_
