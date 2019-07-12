@@ -114,7 +114,7 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 ![Screenshot_18.jpg](Screenshot_18.jpg)
 
-_*Los contratos no han sido desplegados en Rinkeby. En vez de utilizar Ganache se ha utilizado _truffle develop_ que también crea un nodo en local (_http://127.0.0.1:8545/_). 
+_*Los contratos no han sido desplegados en Rinkeby. En vez de utilizar Ganache se ha utilizado _truffle develop_ que también crea una blockchain en local (_http://127.0.0.1:8545/_). 
 
 
 

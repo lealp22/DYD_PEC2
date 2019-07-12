@@ -4,5 +4,5 @@
 - [Ejercicio 1](./Ejercicio_1_ENS/Ejercicio_1.md)  
 - [Ejercicio 2](./Ejercicio_2_IPFS/Ejercicio_2.md)  
 - [Ejercicio 3](./Ejercicio_3_SWARM/Ejercicio_3.md)  
-- [Ejercicio 4](./Ejercicio_4_SWARM/Ejercicio_4.md)  
+- [Ejercicio 4](./Ejercicio_4_SWARM/Readme.md)  
 

@@ -9,7 +9,11 @@ Demuestre que es usted poseedor del dominio adquirido y obtenga la dirección de
 _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es de 28 días._
 
 ---
-**1º)** Descargamos el fichero ensutils-testnet.js desde la siguiente url:
+
+**1º)** Arrancamos Geth con los siguientes parámetros:
+> _> geth --rinkeby --syncmode "fast" --rpc --rpcapi db,eth,net,web3,personal --cache=1024 --rpcport 8545 --rpcaddr 127.0.0.1 --rpccorsdomain "*"_
+
+**2º)** Descargamos el fichero ensutils-testnet.js desde la siguiente url:
 
 > _https://github.com/ensdomains/ens/blob/master/ensutils-testnet.js_
 
@@ -18,14 +22,14 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 > - **Línea 220**: contract address: _0xe7410170f87102df0055eb195163a03b7f2bff4a_
 > - **Línea 1314**: publicResolver address: _0x5d20cf83cb385e06d2f2a892f9322cd4933eacdc_
 
-**2º)** Una vez modificado, cargamos el script en el cliente Geth:
+**3º)** Una vez modificado, cargamos el script en el cliente Geth:
 
 > _$ geth --rinkeby attach_  
 > _> loadScript("./ens/ensutils-rinkeby.js")_  
 
 ![Screenshot_1.jpg](Screenshot_1.jpg)
 
-**3º)** Ejecutamos el comando que nos permitirá ver si el dominio .test que queremos reservar está disponible (si el valor devuelto es cero):
+**4º)** Ejecutamos el comando que nos permitirá ver si el dominio .test que queremos reservar está disponible (si el valor devuelto es cero):
 
 > _> testRegistrar.expiryTimes(web3.sha3("midomain"))_
 
@@ -58,13 +62,13 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
      at block: 4701880 (Tue, 09 Jul 2019 09:40:26 CEST)  
       datadir: /home/lealp22/.ethereum/rinkeby  
 ````
-**5º)** Una vez sincronizado, volvemos a ejecutar los pasos 2 y 3. En esta ocasión veremos como sí es posible consultar la disponibilidad del dominio correctamente:
+**5º)** Una vez sincronizado, volvemos a ejecutar los pasos 3 y 4. En esta ocasión veremos como sí es posible consultar la disponibilidad del dominio correctamente:
 
 ![Screenshot_2.jpg](Screenshot_2.jpg)
 
 **6º)** Dado que nos devuelve cero y, por tanto, el dominio está disponible, procedemos a registrarlo: 
 
-* Antes debemos desbloquear la cuenta que vamos a utilizar   _0xeb427055ac4a192cd18d49c208903aa5c00ccd19_:
+* Antes debemos desbloquear la cuenta que vamos a utilizar _(0xeb427055ac4a192cd18d49c208903aa5c00ccd19)_:
 
 > _> personal.unlockAccount(eth.accounts[0])_
 
@@ -108,13 +112,15 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 
 ![Screenshot_8.jpg](Screenshot_8.jpg)
 
-> El hash de la transacción es [0xa443e37a31167755ac770bba9669bb0cad2a3ad3e9694364c5962a75aa6f8a7e](0xa443e37a31167755ac770bba9669bb0cad2a3ad3e9694364c5962a75aa6f8a7e).
+> El hash de la transacción es [0xa443e37a31167755ac770bba9669bb0cad2a3ad3e9694364c5962a75aa6f8a7e](https://rinkeby.etherscan.io/tx/0xa443e37a31167755ac770bba9669bb0cad2a3ad3e9694364c5962a75aa6f8a7e).
 
 **8º)** Para confirmar que el dominio se resuelve correctamente:
 
 > _> getAddr("midomain.test")_
 
 ![Screenshot_9.jpg](Screenshot_9.jpg)
+
+
 
 
 

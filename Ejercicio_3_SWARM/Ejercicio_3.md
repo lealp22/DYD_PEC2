@@ -58,14 +58,14 @@ Comprobamos se ha instalado correctamente:
 > El comando para ello es:  
 > _$ swarm --defaultpath index.html --recursive up --encrypt web_
 
-Con _defaulpath_ se muestra por defecto el fichero indicado (con la url resultante), con _recursive_ se especifica se deben subir los ficheros y carpetas incluidos en el directorio indicado y con _encrypt_ que el contenido este encriptado y nadie más lo pueda utilizar.
+Con _defaultpath_ se mostrará por defecto el fichero indicado (cuando se utilice la url de Swarm), con _recursive_ se subirán los ficheros y carpetas incluidos en el directorio indicado y con _encrypt_ el contenido subirá encriptado y el resto de usuarios no lo podrá utilizar.
 
 ![Screenshot_6.jpg](Screenshot_6.jpg)
 
 Obtenemos el hash:
 _de9c4451590b4ebba7ddfc539596ed5542f8f78ed6b7ce8dda3db4dd1f3a841a1c163750e4e9c5cf755cceeff2bc2a0c1ffef56a167aa5b00381ce9a84df7ecd_
 
-**4º)** Con el hash componemos la url en Swarm y comprobamos que los componentes se han cargado correctamente:
+**4º)** Con este hash componemos la url en Swarm y comprobamos que los componentes se han cargado correctamente:
 
 [http://localhost:8500/bzz:/de9c4451590b4ebba7ddfc539596ed5542f8f78ed6b7ce8dda3db4dd1f3a841a1c163750e4e9c5cf755cceeff2bc2a0c1ffef56a167aa5b00381ce9a84df7ecd](http://localhost:8500/bzz:/de9c4451590b4ebba7ddfc539596ed5542f8f78ed6b7ce8dda3db4dd1f3a841a1c163750e4e9c5cf755cceeff2bc2a0c1ffef56a167aa5b00381ce9a84df7ecd)
 
