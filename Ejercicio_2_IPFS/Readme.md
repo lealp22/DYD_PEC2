@@ -93,15 +93,15 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 ![./images/Screenshot_15.jpg](./images/Screenshot_15.jpg)
 
-> Nos quedamos con el último hash, el del directorio principal:
+* Nos quedamos con el último hash, el del directorio principal:
 > _**QmcU2PXBLKcqLTnRRL2kafVEN9ZUrvestQ9BDW92tCXu6a**_
  
-> Utilizamos este hash para publicar el directorio en IPFS:  
+- Utilizamos este hash para publicar el directorio en IPFS:  
 > _$ ipfs name publish QmcU2PXBLKcqLTnRRL2kafVEN9ZUrvestQ9BDW92tCXu6a_
 
 ![./images/Screenshot_16.jpg](./images/Screenshot_16.jpg)
 
-> Comprobamos el contenido publicado:
+* Comprobamos el contenido publicado:
 
 > _$ ipfs ls /ipfs/QmcU2PXBLKcqLTnRRL2kafVEN9ZUrvestQ9BDW92tCXu6a_
 
@@ -114,7 +114,7 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 ![./images/Screenshot_18.jpg](./images/Screenshot_18.jpg)
 
-_*Los contratos no han sido desplegados en Rinkeby. En vez de utilizar Ganache se ha utilizado _truffle develop_ que también crea una blockchain en local (_http://127.0.0.1:8545/_). 
+_*Los contratos no han sido desplegados en Rinkeby. En vez de utilizar Ganache se ha utilizado _truffle develop_ que también crea una blockchain en local. 
 
 
 

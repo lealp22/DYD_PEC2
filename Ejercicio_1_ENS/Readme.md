@@ -55,7 +55,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
      at block: 0 (Wed, 12 Apr 2017 16:59:06 CEST)  
       datadir: /home/lealp22/.ethereum/rinkeby  
 ```` 
->Por tanto, es necesario tener el nodo de Rinkeby completamente sincronizado para poder ejecutar este comando. Nos deberá aparecer algo similar a:
+- Por tanto, es necesario tener el nodo de Rinkeby completamente sincronizado para poder ejecutar este comando. Nos deberá aparecer algo similar a:
 ````
      instance: Geth/v1.8.27-stable-4bcc0a37/linux-amd64/go1.10.4  
      coinbase: 0xeb427055ac4a192cd18d49c208903aa5c00ccd19  
@@ -114,7 +114,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 
 > El hash de la transacción es [0xa443e37a31167755ac770bba9669bb0cad2a3ad3e9694364c5962a75aa6f8a7e](https://rinkeby.etherscan.io/tx/0xa443e37a31167755ac770bba9669bb0cad2a3ad3e9694364c5962a75aa6f8a7e).
 
-**8º)** Para confirmar que el dominio se resuelve correctamente:
+**8º)** Para confirmar que la dirección asociada al dominio se resuelve correctamente:
 
 > _> getAddr("midomain.test")_
 
