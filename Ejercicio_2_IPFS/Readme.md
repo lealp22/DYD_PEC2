@@ -54,8 +54,8 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 * Indicar que previamente se modificó el fichero _webpack.config.js_ para que se copiasen los ficheros json del directorio _../build/contracts/_ al directorio _/dist_ y tener todos los componentes necesarios para ejecutar la web en un único directorio).  
 * En línea con esto, también se modificó el componente _app/src/index.js_ para incluir el siguiente cambio:  
->> //import metaCoinArtifact from "../../build/contracts/MetaCoin.json";  
->> import metaCoinArtifact from "../MetaCoin.json";  
+> //import metaCoinArtifact from "../../build/contracts/MetaCoin.json";  
+> import metaCoinArtifact from "../MetaCoin.json";  
 
 
 **5º)** Subimos nuestro _truffle project_ a GitHub:
