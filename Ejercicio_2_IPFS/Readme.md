@@ -24,15 +24,15 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 > _$ truffle unbox webpack_
 
-![Screenshot_1.jpg](Screenshot_1.jpg)
+![./images/Screenshot_1.jpg](./images/Screenshot_1.jpg)
 
 - Abrimos una consola de desarrollo de Truffle (_truffle develop_) para poder ejecutar los comandos _compile_ y _migrate_:
 
-![Screenshot_2.jpg](Screenshot_2.jpg)
+![./images/Screenshot_2.jpg](./images/Screenshot_2.jpg)
 
-![Screenshot_3.jpg](Screenshot_3.jpg)
+![./images/Screenshot_3.jpg](./images/Screenshot_3.jpg)
 
-![Screenshot_4.jpg](Screenshot_4.jpg)
+![./images/Screenshot_4.jpg](./images/Screenshot_4.jpg)
 
 **2º)** Hacemos una pequeña modificación en el frontend para incluir el nombre (en _src/index.html_). 
 
@@ -42,7 +42,7 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 - Una vez configurado MetaMask para que funcione con el nodo local (http://127.0.0.1:8545/) e importamos una de las cuentas disponibles, vemos que funciona correctamente:
 
-![Screenshot_5.jpg](Screenshot_5.jpg)
+![./images/Screenshot_5.jpg](./images/Screenshot_5.jpg)
 
 **4º)** Preparamos la aplicación para su posterior despliegue en IPFS:
 
@@ -50,7 +50,7 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 > Esto deja en el directorio _app/dist_ los componentes listos para el despliegue.
 
-![Screenshot_6.jpg](Screenshot_6.jpg)
+![./images/Screenshot_6.jpg](./images/Screenshot_6.jpg)
 
 * Indicar que previamente se modificó el fichero _webpack.config.js_ para que se copiasen los ficheros json del directorio _../build/contracts/_ al directorio _/dist_ y tener todos los componentes necesarios para ejecutar la web en un único directorio).  
 * En línea con esto, también se modificó el componente _app/src/index.js_ para incluir el siguiente cambio:  
@@ -71,13 +71,13 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 > _$ cd go-ipfs/_  
 > _$ sudo ./install.sh_  
 
-![Screenshot_12.jpg](Screenshot_12.jpg)
+![./images/Screenshot_12.jpg](./images/Screenshot_12.jpg)
 
 - Seguimos las instrucciones en _https://docs.ipfs.io/introduction/usage/_
 
 > _$ ipfs init_
 
-![Screenshot_13.jpg](Screenshot_13.jpg)
+![./images/Screenshot_13.jpg](./images/Screenshot_13.jpg)
 
 > Con lo que obtenemos:  
 >> **_- peer identity: QmehNL7rwheXo2mdSB8J37LwGZDkPbDgELKd1BRqSaW7Gs_**  
@@ -91,7 +91,7 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 
 > _$ ipfs add -r dist/_
 
-![Screenshot_15.jpg](Screenshot_15.jpg)
+![./images/Screenshot_15.jpg](./images/Screenshot_15.jpg)
 
 > Nos quedamos con el último hash, el del directorio principal:
 > _**QmcU2PXBLKcqLTnRRL2kafVEN9ZUrvestQ9BDW92tCXu6a**_
@@ -99,20 +99,20 @@ _*Se recomienda alojar el contenido a subir en IPFS en una única carpeta, ésta
 > Utilizamos este hash para publicar el directorio en IPFS:  
 > _$ ipfs name publish QmcU2PXBLKcqLTnRRL2kafVEN9ZUrvestQ9BDW92tCXu6a_
 
-![Screenshot_16.jpg](Screenshot_16.jpg)
+![./images/Screenshot_16.jpg](./images/Screenshot_16.jpg)
 
 > Comprobamos el contenido publicado:
 
 > _$ ipfs ls /ipfs/QmcU2PXBLKcqLTnRRL2kafVEN9ZUrvestQ9BDW92tCXu6a_
 
-![Screenshot_17.jpg](Screenshot_17.jpg)
+![./images/Screenshot_17.jpg](./images/Screenshot_17.jpg)
 
 
 **7º)** Accedemos a la aplicación publicada en IPFS para comprobar que funciona correctamente:
 
 > _https://ipfs.io/ipfs/QmcU2PXBLKcqLTnRRL2kafVEN9ZUrvestQ9BDW92tCXu6a/index.html_
 
-![Screenshot_18.jpg](Screenshot_18.jpg)
+![./images/Screenshot_18.jpg](./images/Screenshot_18.jpg)
 
 _*Los contratos no han sido desplegados en Rinkeby. En vez de utilizar Ganache se ha utilizado _truffle develop_ que también crea una blockchain en local (_http://127.0.0.1:8545/_). 
 

@@ -27,7 +27,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 > _$ geth --rinkeby attach_  
 > _> loadScript("./ens/ensutils-rinkeby.js")_  
 
-![Screenshot_1.jpg](Screenshot_1.jpg)
+![./images/Screenshot_1.jpg](./images/Screenshot_1.jpg)
 
 **4º)** Ejecutamos el comando que nos permitirá ver si el dominio .test que queremos reservar está disponible (si el valor devuelto es cero):
 
@@ -64,7 +64,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 ````
 **5º)** Una vez sincronizado, volvemos a ejecutar los pasos 3 y 4. En esta ocasión veremos como sí es posible consultar la disponibilidad del dominio correctamente:
 
-![Screenshot_2.jpg](Screenshot_2.jpg)
+![./images/Screenshot_2.jpg](./images/Screenshot_2.jpg)
 
 **6º)** Dado que nos devuelve cero y, por tanto, el dominio está disponible, procedemos a registrarlo: 
 
@@ -72,7 +72,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 
 > _> personal.unlockAccount(eth.accounts[0])_
 
-![Screenshot_3.jpg](Screenshot_3.jpg)
+![./images/Screenshot_3.jpg](./images/Screenshot_3.jpg)
 
 * Si la cuenta no tiene saldo, como es nuestro caso, se puede utilizar el _Faucet_ en [https://faucet.rinkeby.io/](https://faucet.rinkeby.io/). En esta ocasión recibimos 7,5 ether a través de la transacción [0xde3042dc12bfa1a35f1b9e667a05592e6d58f29e54538f7974b644e142abab1d](https://rinkeby.etherscan.io/tx/0xde3042dc12bfa1a35f1b9e667a05592e6d58f29e54538f7974b644e142abab1d).  
 
@@ -80,7 +80,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 
 > _> testRegistrar.register(web3.sha3("midomain"), eth.accounts[0], {from: eth.accounts[0]})_
 
-![Screenshot_4.jpg](Screenshot_4.jpg)
+![./images/Screenshot_4.jpg](./images/Screenshot_4.jpg)
 
 > El hash de la transacción es [0x15ee9e47e9227d3bbafc2f99aff5cc137d83ee94b3633d598e135a702f47283d](https://rinkeby.etherscan.io/tx/0x15ee9e47e9227d3bbafc2f99aff5cc137d83ee94b3633d598e135a702f47283d)
 
@@ -88,11 +88,11 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 
 > _> ens.owner(namehash("midomain.test"))_
 
-![Screenshot_5.jpg](Screenshot_5.jpg)
+![./images/Screenshot_5.jpg](./images/Screenshot_5.jpg)
 
 > Al menos hasta el 6 de agosto 2019:
 
-![Screenshot_6.jpg](Screenshot_6.jpg)
+![./images/Screenshot_6.jpg](./images/Screenshot_6.jpg)
 
 **7º)** Ahora que tenemos registrado el dominio debemos indicar cómo se debe resolver:
 
@@ -100,7 +100,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 
 > _> ens.setResolver(namehash("midomain.test"), publicResolver.address, {from: eth.accounts[0]})_
 
-![Screenshot_7.jpg](Screenshot_7.jpg)
+![./images/Screenshot_7.jpg](./images/Screenshot_7.jpg)
 
 > El hash de la transacción es [0xbc069d1e6448da80575657ba327c7f435fe008d8ad3bb6c61f41a43e1c99a566](https://rinkeby.etherscan.io/tx/0xbc069d1e6448da80575657ba327c7f435fe008d8ad3bb6c61f41a43e1c99a566).
 
@@ -110,7 +110,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 
 > _> publicResolver.setAddr(namehash("midomain.test"), eth.accounts[0], {from: eth.accounts[0]})_
 
-![Screenshot_8.jpg](Screenshot_8.jpg)
+![./images/Screenshot_8.jpg](./images/Screenshot_8.jpg)
 
 > El hash de la transacción es [0xa443e37a31167755ac770bba9669bb0cad2a3ad3e9694364c5962a75aa6f8a7e](https://rinkeby.etherscan.io/tx/0xa443e37a31167755ac770bba9669bb0cad2a3ad3e9694364c5962a75aa6f8a7e).
 
@@ -118,7 +118,7 @@ _*Tenga en cuenta que la duración de la propiedad de los dominios en testnet es
 
 > _> getAddr("midomain.test")_
 
-![Screenshot_9.jpg](Screenshot_9.jpg)
+![./images/Screenshot_9.jpg](./images/Screenshot_9.jpg)
 
 
 

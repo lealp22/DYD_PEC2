@@ -8,7 +8,7 @@ No se considerará válido si se suben los contenidos por separado y se vinculan
 
 La respuesta a este ejercicio debe ser algo de este estilo:
 
-![Screenshot_0.jpg](Screenshot_0.jpg)
+![./images/Screenshot_0.jpg](./images/Screenshot_0.jpg)
 
 No es necesario vincular el hash de Swarm a ENS.
 
@@ -20,11 +20,11 @@ Dado que el repositorio PPA ya quedó preparado con la instalación de Ethereum,
 > _$ sudo apt-get update_  
 > _$ sudo apt-get install ethereum-swarm_
 
-![Screenshot_1.jpg](Screenshot_1.jpg)
+![./images/Screenshot_1.jpg](./images/Screenshot_1.jpg)
 
 Comprobamos se ha instalado correctamente:
 
-![Screenshot_2.jpg](Screenshot_2.jpg)
+![./images/Screenshot_2.jpg](./images/Screenshot_2.jpg)
 
 **2º)** Continuamos con las indicaciones según la web https://swarm-guide.readthedocs.io/en/latest/gettingstarted.html
 
@@ -32,7 +32,7 @@ Comprobamos se ha instalado correctamente:
 
 > _$ geth account new_
 
-![Screenshot_3.jpg](Screenshot_3.jpg)
+![./images/Screenshot_3.jpg](./images/Screenshot_3.jpg)
 
 > _b5d33f3957b8b923ac82db1ded35ee4e0238c49e_
 
@@ -40,13 +40,13 @@ Comprobamos se ha instalado correctamente:
 
 > _$ swarm --bzzaccount b5d33f3957b8b923ac82db1ded35ee4e0238c49e_
 
-![Screenshot_4.jpg](Screenshot_4.jpg)
+![./images/Screenshot_4.jpg](./images/Screenshot_4.jpg)
 
 - Verificamos que nuestro nodo local está funcionando:
 
 > _http://localhost:8500_
 
-![Screenshot_5.jpg](Screenshot_5.jpg)
+![./images/Screenshot_5.jpg](./images/Screenshot_5.jpg)
 
 **3º)** Abrimos otro terminal para subir los componentes de la web:
 
@@ -60,7 +60,7 @@ Comprobamos se ha instalado correctamente:
 
 Con _defaultpath_ se mostrará por defecto el fichero indicado (cuando se utilice la url de Swarm), con _recursive_ se subirán los ficheros y carpetas incluidos en el directorio indicado y con _encrypt_ el contenido subirá encriptado y el resto de usuarios no lo podrá utilizar.
 
-![Screenshot_6.jpg](Screenshot_6.jpg)
+![./images/Screenshot_6.jpg](./images/Screenshot_6.jpg)
 
 Obtenemos el hash:
 _de9c4451590b4ebba7ddfc539596ed5542f8f78ed6b7ce8dda3db4dd1f3a841a1c163750e4e9c5cf755cceeff2bc2a0c1ffef56a167aa5b00381ce9a84df7ecd_
@@ -69,13 +69,13 @@ _de9c4451590b4ebba7ddfc539596ed5542f8f78ed6b7ce8dda3db4dd1f3a841a1c163750e4e9c5c
 
 [http://localhost:8500/bzz:/de9c4451590b4ebba7ddfc539596ed5542f8f78ed6b7ce8dda3db4dd1f3a841a1c163750e4e9c5cf755cceeff2bc2a0c1ffef56a167aa5b00381ce9a84df7ecd](http://localhost:8500/bzz:/de9c4451590b4ebba7ddfc539596ed5542f8f78ed6b7ce8dda3db4dd1f3a841a1c163750e4e9c5cf755cceeff2bc2a0c1ffef56a167aa5b00381ce9a84df7ecd)
 
-![Screenshot_7.jpg](Screenshot_7.jpg)
+![./images/Screenshot_7.jpg](./images/Screenshot_7.jpg)
 
 > Podemos comprobar que al pinchar sobre ambos documentos el hash en la barra del explorador no cambia:
 - documento1.txt  
-![Screenshot_8.jpg](Screenshot_8.jpg)
+![./images/Screenshot_8.jpg](./images/Screenshot_8.jpg)
 - documento2.txt  
-![Screenshot_9.jpg](Screenshot_9.jpg)
+![./images/Screenshot_9.jpg](./images/Screenshot_9.jpg)
 
 
 

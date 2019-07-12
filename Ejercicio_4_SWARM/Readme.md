@@ -215,7 +215,7 @@ Summary
 ![./images/Screenshot_3.jpg](./images/Screenshot_3.jpg)
 
 >El hash devuelto corresponde al _manifest_ raíz que referencia todos los ficheros en el directorio:  
-_7ea4537a129972fb61575d04a1954b36ce1c3fac5d79fe07b69673ddd159fc7b_
+**7ea4537a129972fb61575d04a1954b36ce1c3fac5d79fe07b69673ddd159fc7b**
 
 
 **7º)** Con este hash componemos la url de Swarm y comprobamos que los componentes se han cargado correctamente:
