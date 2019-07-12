@@ -197,13 +197,13 @@ Summary
 **4º)** Preparamos la aplicación para su posterior despliegue en Swarm: 
 > _$ npm run build_
 
-![image\Screenshot_1.jpg](image\Screenshot_1.jpg)
+![./images/Screenshot_1.jpg](./images/Screenshot_1.jpg)
 
 **5º)** Ejecutamos una instancia de Swarm, tal como hicimos en el ejercicio 3:
 
 > _$ swarm --bzzaccount b5d33f3957b8b923ac82db1ded35ee4e0238c49e_
 
-![image\Screenshot_2.jpg](image\Screenshot_2.jpg)
+![./images/Screenshot_2.jpg](./images/Screenshot_2.jpg)
 
 **6º)** Abrimos otro terminal para subir los componentes de la aplicación:
 
@@ -212,7 +212,7 @@ Summary
 
 >Con _defaultpath_ se mostrará por defecto el fichero indicado (cuando se utilice la url de Swarm) y con _recursive_ se subirán los ficheros y carpetas incluidos en el directorio indicado.
 
-![image\Screenshot_3.jpg](image\Screenshot_3.jpg)
+![./images/Screenshot_3.jpg](./images/Screenshot_3.jpg)
 
 >El hash devuelto corresponde al _manifest_ raíz que referencia todos los ficheros en el directorio:  
 _7ea4537a129972fb61575d04a1954b36ce1c3fac5d79fe07b69673ddd159fc7b_
@@ -224,7 +224,7 @@ _7ea4537a129972fb61575d04a1954b36ce1c3fac5d79fe07b69673ddd159fc7b_
 
 >Vemos que la dapp funciona correctamente y se pueden ejecutar transacciones como en local firmando con MetaMask:
 
-![image\Screenshot_6.jpg](image\Screenshot_6.jpg)
+![./images/Screenshot_6.jpg](./images/Screenshot_6.jpg)
 
 + La transacción realizada es la [0x2f9ebb2bb0369744a70ab08cfb295a3cd34ea98f800611801c5c64536a46cbd7](https://rinkeby.etherscan.io/tx/0x2f9ebb2bb0369744a70ab08cfb295a3cd34ea98f800611801c5c64536a46cbd7)
 
@@ -236,13 +236,13 @@ _7ea4537a129972fb61575d04a1954b36ce1c3fac5d79fe07b69673ddd159fc7b_
 > _$ geth --rinkeby attach_  
 > _> loadScript("./ens/ensutils-rinkeby.js")_
 
-![image\Screenshot_4.jpg](image\Screenshot_4.jpg)
+![./images/Screenshot_4.jpg](./images/Screenshot_4.jpg)
 
 - Se indica al _Resolver_ cómo resolver el contenido indicando el hash del manifest devuelto por Swarm:
 
 > _> publicResolver.setContent(namehash("midomain.test"), "0x7ea4537a129972fb61575d04a1954b36ce1c3fac5d79fe07b69673ddd159fc7b", {from: eth.accounts[0]})_
 
-![image\Screenshot_5.jpg](image\Screenshot_5.jpg)
+![./images/Screenshot_5.jpg](./images/Screenshot_5.jpg)
 
 > El hash de esta transacción es [0xc5cff028642ea144f4d0bddace830cb4eca27c92bae87b729a3952e24c60cbc8](https://rinkeby.etherscan.io/tx/0xc5cff028642ea144f4d0bddace830cb4eca27c92bae87b729a3952e24c60cbc8).
 
@@ -250,14 +250,14 @@ _7ea4537a129972fb61575d04a1954b36ce1c3fac5d79fe07b69673ddd159fc7b_
 
 > _> getContent("midomain.test")_
 
-![image\Screenshot_8.jpg](image\Screenshot_8.jpg)
+![./images/Screenshot_8.jpg](./images/Screenshot_8.jpg)
 
 
 **9º)** Detenemos la instancia de Swarm y la volvemos a ejecutar, aunque en esta ocasión indicando el endpoint con el que se resolverá el dominio ENS:
 
 > _$ swarm --bzzaccount b5d33f3957b8b923ac82db1ded35ee4e0238c49e --ens-api test:0xe7410170f87102df0055eb195163a03b7f2bff4a@/home/lealp22/.ethereum/rinkeby/geth.ipc_
 
-![image\Screenshot_7.jpg](image\Screenshot_7.jpg)
+![./images/Screenshot_7.jpg](./images/Screenshot_7.jpg)
 
 
 **10º)** Con esto ya podemos poder utilizar la URL de Swarm que incluye el dominio que hemos registrado:
@@ -266,10 +266,10 @@ _7ea4537a129972fb61575d04a1954b36ce1c3fac5d79fe07b69673ddd159fc7b_
 
 * Ejecutamos una transacción tal como funcionaría en local:
 
-![image\Screenshot_9.jpg](image\Screenshot_9.jpg)
+![./images/Screenshot_9.jpg](./images/Screenshot_9.jpg)
 
 * Esta transacción es la [0xc7c35c52e23d8d4999c013f3ce822647ee7f0047cfa78058dab42b10f84ed2c9](https://rinkeby.etherscan.io/tx/0xc7c35c52e23d8d4999c013f3ce822647ee7f0047cfa78058dab42b10f84ed2c9)
 
 - Parte de la información mostrada por Swarm mientras realizamos la transacción:
 
-![image\Screenshot_10.jpg](image\Screenshot_10.jpg)
+![./images/Screenshot_10.jpg](./images/Screenshot_10.jpg)
